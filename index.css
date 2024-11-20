@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: yellow;
+}
+.prueba {
+    color: blue;
+    font-size: 30px;
+}
+
+·unico{
+    color: red;
+}
+
+.contenedor{
+    background-color: bisque;
+    height: 200px;
+    padding: 10px;
+
+}
+
+.contenedor button{
+    background-color: bisque;
+    height: 200px;
+    padding: 11px;
+    border: 1px solid black;
+    transition-duration: 5000ms;
+}
+
+.contenedor button:hover{
+    background-color: blueviolet;
+    padding: 12px;
+
+}

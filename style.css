@@ -78,7 +78,7 @@ main{
 }
 
 .Seccion1 button{
-    background-color: black;
+    background-color: #1C1C1C;
     color: white;
     border-radius:40px;
     font-size: 20px;
@@ -89,7 +89,7 @@ main{
 }
 
 .Seccion1 button:hover{
-    background-color: black;
+    background-color: #1C1C1C;
     color: #5724e3;
     border-radius: 40px;
     font-size: 20px;
@@ -150,8 +150,64 @@ main{
     border: none;
 }
 
+/*Seccion 2 listado vertical parte de en medio*/
+.Seccion2 article ul{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;
+    justify-content: center ;*/
+    list-style-type: none;
+    background-color: #1c1c1ce7;
+}
+body .Menu_deslizante{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(220, 220, 220, 0.171);
+    padding: 5px 5px
+}
 
+body .Menu_deslizante .Btn_menu_deslizante{
+    background-color: #8224E3;
+    color: white;
+    height: 25px;
+    width: 70px;
+    border-radius: 3px;
+    border: none;
+}
 
+.Seccion2 article ul li{
+    display: flex;
+    align-items: center ;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.Img_pequeña{
+    width: 40px;
+    height: 55px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+}
+
+.Seccion2 article ul button{
+    background-color: #2e2e2e;
+    color: rgba(128, 128, 128, 0.973);
+    height: 25px;
+    width: 25px;
+    border: rgb(75, 74, 74) solid;
+}
+
+.Seccion2 article ul p{
+    color: white;
+}
+
+.Seccion2 article ul p:hover{
+    color: #7554cf;
+    border-color: #ece8e8 solid;
+}
 
 
 /*Estilos del footer*/

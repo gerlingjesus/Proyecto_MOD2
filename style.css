@@ -57,7 +57,8 @@ main{
 .Seccion1 article{
     background-color: #8224E3;
     height: 100px;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding: 20px 10px 0px 10px;
     display: flex;
     
@@ -79,7 +80,7 @@ main{
 .Seccion1 button{
     background-color: black;
     color: white;
-    border-radius: 40px;
+    border-radius:40px;
     font-size: 20px;
     font-weight: bold;
     border: none;
@@ -89,7 +90,7 @@ main{
 
 .Seccion1 button:hover{
     background-color: black;
-    color: #5A2E98;
+    color: #5724e3;
     border-radius: 40px;
     font-size: 20px;
     font-weight: bold;
@@ -99,10 +100,7 @@ main{
     cursor: pointer;
 }
 
-.Seccion2{
-    background-color: bisque;
-    width: 30%;
-}
+
 
 .Seccion1_2{
     background-color: aqua;
@@ -110,8 +108,47 @@ main{
     justify-content: space-between;
 }
 
+.Seccion2{
+    background-color: bisque;
+    width: 30%;
+}
 
+.Seccion2 article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #aaa;
+    
+}
 
+.Seccion2 article div{
+    display: flex;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    background-color: #1C1C1C;
+}
+
+.Seccion2 article button{
+    background-color: #5724e3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+.Seccion2 article div button{
+    background-color: #262626;
+    color: rgba(128, 128, 128, 0.829);
+    width: 200px;
+    margin-left: 10px;
+    border: none;
+}
 
 
 
@@ -119,11 +156,21 @@ main{
 
 /*Estilos del footer*/
 
+/*pie de pagina*/
+footer {
+    text-align: center;
+    color: #aaa;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    background-color: #1C1C1C; /* Fondo de color gris oscuro */
+
+}
+
 .Lista_botones{
             display: flex;
             justify-content: center;
-            gap: 0.5rem;
-            margin: 1rem 0;
+            gap: 6px;
+            margin: 1rem;
             
 }
 
@@ -138,15 +185,7 @@ main{
 }
  
 
-/*pie de pagina*/
-footer {
-    text-align: center;
-    color: #aaa;
-    font-size: 0.9rem;
-    padding: 1.5rem 0;
-    background-color: #1C1C1C; /* Fondo de color gris oscuro */
 
-}
 
 
 footer .buttons {

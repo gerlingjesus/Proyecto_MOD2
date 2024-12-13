@@ -17,6 +17,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
     /* padding-left: 15%;
     padding-right: 15%; */
     
@@ -184,7 +186,36 @@ body header{
     justify-content: flex-start;
     align-items: center; 
     gap: 10px;
-    padding: 20px 0px 20px 0px;;
+    padding: 20px 0px 20px 0px;
+    /* margin-left: 10px; */
+}
+
+body header img{
+    /* Cuando son imagenes tomadas de la web las 2 */
+    width: 180px;
+    height: 50px;
+    padding-left: 10px; 
+}
+
+.Menu_bar{
+    /* width: 40px; 
+    height: 40px;  */
+    width: 2.7rem;
+    height: 3rem;
+    padding-left: 0;
+}
+
+body header input{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    background-color: rgba(128, 128, 128, 0.312); 
+    width: 350px; 
+    height: 50px;
+    border-radius:40px;
+    border: none; 
+    font-size: 17px; 
+    
 }
 
 .sticky-header {
@@ -207,29 +238,6 @@ body header{
     background-color: #45a049;  
   } 
 
-body header img{
-    width: 180px;
-    height: 50px;
-    padding-left: 20px;
-}
-
-.Menu_bar{
-    width: 40px; 
-    height: 40px; 
-}
-
-body header input{
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 15px;
-    background-color: rgba(128, 128, 128, 0.312); 
-    width: 350px; 
-    height: 50px;
-    border-radius:40px;
-    border: none; 
-    font-size: 17px; 
-    
-}
 
 .Seccion1{
     width: 75%;

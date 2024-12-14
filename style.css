@@ -6,7 +6,6 @@
 }
 main{
     max-width: 1346px;
-    
     display: flex;
 }
 
@@ -24,68 +23,6 @@ body {
     
     
 }
-
-.container {
-
-    display: flex;
-  
-    justify-content: center; /* Centrar horizontalmente */
-  
-    align-items: center; /* Centrar verticalmente */
-  
-    height: 100vh; /* Hacer que ocupe toda la altura de la pantalla */
-  
-    background-color: #f4f4f4;
-  
-  }
-  
-  .card {
-  
-    background-color: white;
-  
-    padding: 20px;
-  
-    box-shadow: 0 4px 8px rgba(221, 7, 7, 0.1);
-  
-    border-radius: 8px;
-  
-    text-align: center;
-  
-  }
-
-  .card-horizontal {
-
-    display: flex;
-  
-    align-items: center; /* Alinear elementos verticalmente */
-  
-    gap: 20px; /* Espacio entre la imagen y la descripción */
-  
-    padding: 20px;
-  
-    border: 1px solid #ddd;
-  
-    border-radius: 8px;
-  
-    margin-bottom: 20px;
-  
-  }
-  
-  .card-image {
-  
-    width: 150px;
-  
-    height: auto;
-  
-    border-radius: 8px;
-  
-  }
-  
-  .card-description {
-  
-    flex: 1; /* Hacer que la descripción ocupe el espacio disponible */
-  
-  }
   
   /* Diseño adaptable */
   
@@ -98,83 +35,6 @@ body {
       align-items: flex-start; /* Alinear a la izquierda en modo columna */
   
     }
-  
-  }
-
-
-.navbar {
-
-    background-color: #333; /* Un fondo oscuro */
-  
-    overflow: hidden; /* Para asegurarnos de que no haya desbordamientos */
-  
-    display: flex; /* Alinea los elementos en una fila */
-  
-    justify-content: space-around; /* Espacia uniformemente los elementos */
-  
-    padding: 1em;
-  
-  }
-  
-  .navbar a {
-  
-    color: white; /* Enlaces en blanco para que resalten */
-  
-    text-decoration: none; /* Quitar el subrayado */
-  
-    padding: 0.5em 1em; /* Espacio alrededor de los enlaces */
-  
-  }
-  
-  .navbar a:hover {
-  
-    background-color: #575757; /* Efecto hover para resaltar los enlaces */
-  
-    transition: 0.3s; /* Suavizar la transición del hover */
-  
-  }
-
-  .cookie-footer {
-
-    position: fixed; /* Siempre visible al final de la pantalla */
-  
-    bottom: 0; /* Pegado a la parte inferior */
-  
-    left: 0;
-  
-    right: 0;
-  
-    background-color: #222; /* Fondo oscuro para que destaque */
-  
-    color: #fff; /* Texto en blanco para buen contraste */
-  
-    padding: 1em;
-  
-    display: flex; /* Organiza el contenido de manera horizontal */
-  
-    justify-content: space-between; /* Espacia el texto y el botón */
-  
-    align-items: center;
-  
-  }
-  
-  .cookie-footer button {
-  
-    background-color: #4caf50; /* Verde para el botón */
-  
-    color: white;
-  
-    border: none;
-  
-    padding: 0.5em 1em;
-  
-    cursor: pointer;
-  
-  }
-  
-  .cookie-footer button:hover {
-  
-    background-color: #45a049; /* Efecto al pasar el ratón sobre el botón */
   
   }
 
@@ -194,7 +54,7 @@ body header img{
     /* Cuando son imagenes tomadas de la web las 2 */
     width: 180px;
     height: 50px;
-    padding-left: 10px; 
+    padding-left: 20px; 
 }
 
 .Menu_bar{
@@ -218,27 +78,7 @@ body header input{
     
 }
 
-.sticky-header {
-    position: fixed;
-    bottom: 70px;  
-    right: 300px;   
-    background-color: transparent;
-    padding: 10px 20px;  /* Espaciado interno */
-    border: none;   /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-.sticky-header img{
-    width: 100px;
-    height: 100px;
-}
-
-.sticky-header:hover {
-    background-color: #45a049;  
-  } 
-
-
+/*Comenzamos la primer sección a la izquierda*/
 .Seccion1{
     width: 75%;
     padding: 0px 10px 10px 0px ;
@@ -246,7 +86,7 @@ body header input{
 
 .Seccion1 img{
    width: 100%;
-   height: 50%;
+   height: 20rem;
    border-radius: 10px;
    display: flex;
 }
@@ -266,10 +106,11 @@ body header input{
     font-size: 25px;
     padding-bottom: 8px;
     font-family: 'Courier New', Courier, monospace;
+    flex: 1;
 }
 
 .Seccion1 div p{
-    
+    flex: 1;
     color:white;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -299,17 +140,132 @@ body header input{
 }
 
 
+.Popular_div {
+    display: flex;
+    align-items: end;
+    background-color: #0E0E0E;
+    color: white;
+    font-weight: 100;
+    font-size: 1.5rem;
+    height: 3rem;
+    padding-bottom: 0.4rem;
+}
 
-.Seccion1_2{
-    background-color: #1C1C1C;
+.Seccion1 .Seccion1_article{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    background-color: #0E0E0E;
+    height: 20rem;
+    padding-top: 0px;
 }
-main .Articulos_medios{
+
+.Seccion1 .Seccion1_article span{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: #0E0E0E;
+    width: 19%;
+    padding-bottom: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.Seccion1 .Seccion1_article span:hover{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: #0E0E0E;
+    width: 19%;
+    padding-bottom: 10px;
+    color: #8224E3;
+}
+
+.Seccion1 .Seccion1_article .imagenX{
+    width: 100%;
+    height: 50%;
+}
+
+.Seccion1 .Seccion1_article .texto_X{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.Seccion1_fin{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.Seccion1_fin button{
+    background-color: #8224E3;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 3px;
+    font-weight: 50;
+    font-size: 0.8rem;
+    font-family:sans-serif;
+}
+.Seccion1_fin button:hover{
     background-color: #1C1C1C;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 3px;
+    font-weight: 50;
+    font-size: 0.8rem;
+    font-family:sans-serif;
+    color: #7554cf;
+    transition: 100ms;
 }
+
+
+
+
+
+
+.Seccion1 .Seccion1_article2 div span .imagenX2{
+    width: 100%;
+    height: 35%;
+}
+
+.Seccion1 .Seccion1_article2 .texto_X2{
+    display: flex;
+    justify-content: center;
+    /* color: white; */
+    padding-top: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .Seccion2{
-    background-color: bisque;
+    background-color: #0E0E0E;
     width: 25%;
     border-radius: 10px;
 }
@@ -326,10 +282,11 @@ main .Articulos_medios{
 .Seccion2 article div{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 7px;
+    justify-content: center;
+    /* padding-left: 0.1rem;
+    padding-right: 1px; */
     padding-bottom: 15px;
     padding-top: 5px;
-    padding-right: 7px;
     background-color: #1C1C1C;
 }
 
@@ -349,7 +306,8 @@ main .Articulos_medios{
     background-color: #262626;
     border-radius: 1.5px;
     color: rgba(128, 128, 128, 0.993);
-    width: 9rem;
+    width: 40%;
+    /* width: 8rem; */
     height: 2rem;
     margin-top: 10px;
     margin-left: 10px;
@@ -441,11 +399,88 @@ body .Seccion2 .Separacion{
 }
 
 
+/*Seccion 2 derecha listado grande general*/
+.Seccion2 .article2_derecha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1C1C1C;
+    border-radius: 3px;
+}
+
+.Seccion2 .article2_derecha span{
+    width: 100%;
+    background-color: #1C1C1C;
+}
+
+.Seccion2 .article2_derecha .Btn_listado{
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    color: white;
+    height: 1rem;
+    width: 3rem;
+}
+.Seccion2 .article2_derecha .Btn_listado:hover{
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    color: white;
+    height: 1rem;
+    width: 3rem;
+    color: #8224E3;
+}
+
+/*Sección2 en la parte ultima articulo*/
+
+.Seccion2 .Article3_derecha{
+    background-color: #1C1C1C;
+    border-radius: 3px;
+}
+
+.Seccion2 .Article3_derecha span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    background-color: #1C1C1C;
+    color: white;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+.Seccion2 .Article3_derecha span:hover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    background-color: #b4b2b25e;
+    color: #8224E3;
+    cursor: pointer;
+}
+
+.Seccion2 .Article3_derecha span button{
+    background-color: #8224E3;
+    border-radius: 4px;
+    width: 5rem;
+    height: 1.6rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.7rem;
+}
+
+
+
 /*Estilos del footer*/
 
 /*pie de pagina*/
 footer {
-    max-width: 1346px;
+    /* max-width: 1346px; */
     width: 100%;
     text-align: center;
     color: #aaa;
@@ -474,6 +509,17 @@ footer {
     text-decoration: none;
     border-radius: 4px;
 }
+.Lista_botones a:hover{
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: #1C1C1C;; 
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #7554cf;
+    transition: 100ms;
+}
  
 
 
@@ -494,6 +540,8 @@ footer .button {
 footer .button:hover {
     color: rgba(233, 233, 233, 0.705);
 }
+
+
 
 
 /* METODOS RESPONSIVOS */
